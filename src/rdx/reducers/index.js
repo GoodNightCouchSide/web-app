@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux'
 
-import { eventListReducer } from 'components/eventList/reducer'
+import { eventListReducer, eventRequestetShowsReducer } from 'components/eventList/reducer'
 import { loginStateReducer } from 'components/user/login/reducer'
 import { userCtxReducer } from 'components/user/reducer'
 import { ownRequestIdsReducer } from 'components/actors/request/reducer'
@@ -10,6 +10,7 @@ import { genresReducer } from 'components/genres/reducer'
 import { eventFilterReducer } from 'components/eventFilter/reducer'
 export default combineReducers({
     eventList: eventListReducer,
+    requestedShows: eventRequestetShowsReducer,
     loginState: loginStateReducer,
     userCtx: userCtxReducer,
     ownRequestIds: ownRequestIdsReducer,
